@@ -156,6 +156,7 @@ public class StatePlaying extends DefaultState {
         // react to input for displaying a map of the current path or of the overall maze (on/off toggle switch)
         // react to input to display solution (on/off toggle switch)
         // react to input to increase/reduce map scale
+        
         switch (key) {
         case Start: // misplaced, do nothing
             break;

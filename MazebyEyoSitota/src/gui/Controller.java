@@ -1,5 +1,5 @@
 package gui;
-
+import java.util.Random;
 import gui.Constants.UserInput;
 
 import generation.CardinalDirection;
@@ -152,11 +152,12 @@ public class Controller {
         currentState.setBuilder(builder); 
         currentState.setPerfect(perfect);
         if (!deterministic) {
-        	System.out.println("Assignment: implement code such that a repeated generation creates different mazes! Program stops!");
-			System.exit(0) ;
+        	Random random = new Random();
+        	seed = random.nextInt(10);
         	// TODO: implement code that makes sure we generate different random mazes
         	// HINT: check http://download.oracle.com/javase/6/docs/api/java/util/Random.html
         }
+        
         currentState.setSeed(seed);
         currentState.start(this, panel);
     }
