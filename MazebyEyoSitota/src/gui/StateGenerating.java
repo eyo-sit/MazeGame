@@ -32,7 +32,7 @@ import gui.Constants.UserInput;
  */
 public class StateGenerating extends DefaultState implements Order {
     SimpleScreens view;
-    MazePanel panel;
+    MazePanel panel;                                    
     Controller control;
     // Filename if maze is loaded from file, can be null
     private String filename;

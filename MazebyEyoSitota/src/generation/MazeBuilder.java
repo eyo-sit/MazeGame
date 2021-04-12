@@ -89,7 +89,7 @@ public class MazeBuilder implements Runnable {
 
 			final int colchange = random.nextIntWithinInterval(0, 255); // used in the constructor for Segments  class Seg
 			final BSPBuilder b = new BSPBuilder(order, dists, floorplan, width, height, colchange, expectedPartiters) ;
-			BSPNode root = b.generateBSPNodes(); // takes a long time, updates progressbar, 
+			BSPNode root = b.generateBSPNodes(); // takes a long time, updates progress bar, 
 			// it also internally checks for cancel requests
 			// and throws an interrupted exception if that happens
 
@@ -187,7 +187,7 @@ public class MazeBuilder implements Runnable {
 	}
 
 
-	
+		
 	/**
 	 * This method generates a maze.
 	 * It computes distances, determines a start and exit position that are as far apart as possible. 

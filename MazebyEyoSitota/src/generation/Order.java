@@ -16,7 +16,7 @@ public interface Order {
 	int getSkillLevel() ;
 	/** 
 	 * Gives the requested builder algorithm, possible values 
-	 * are listed in the Builder enum type.
+	 * are listed in the Builder enum type.	
 	 */
 	Builder getBuilder() ;
 	/**
